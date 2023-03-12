@@ -1,0 +1,150 @@
+body {
+    background-color:antiquewhite; 
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    position: static;
+    font-family: Prompt;
+    color: rgb(4, 0, 255);
+    padding: 40px;
+}
+
+/* image */
+
+#image {
+    width: 0px;
+    transform: scale(0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+#image_first {
+    visibility: visible;
+    width: 600px;
+    display: block;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* headlines */
+
+.h2 {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.h1 {
+    color: black;
+}
+
+/* hover */
+
+section:hover #image {
+    transition: 1s;
+    visibility: visible;
+    transform: scale(1);
+    width: 600px;
+    padding-bottom: 30px;
+}  
+
+
+.main:hover {
+    color:rgb(0, 0, 0);
+    visibility: visible;
+    cursor: pointer
+}
+
+main:hover .open {
+    visibility: visible;
+    transition: 1s;
+}
+
+section:hover .open {
+    visibility: hidden;
+    transition: 1s;
+}
+
+
+
+/* special symbols */
+
+.line {
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+
+.open {
+    float: right;
+    padding-top: 25px;
+    visibility: hidden;
+    transition: 1s;
+}
+
+
+@media (min-width: 320px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .main {
+        width: 300px;
+        padding: 11px;
+    }
+
+    #image_first {
+        width: 200px;
+    }
+
+    section:hover #image {
+        width: 200px;
+    }
+}
+
+@media (min-width: 820px) {
+    body {
+        font-size: 14px;
+    }
+
+    #image_first {
+        width: 400px;
+    }
+
+    .main {
+        width: 700px;
+        padding: 20px;
+    }
+
+    section:hover #image {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+
+    .main {
+        width: 1000px;
+        padding: 20px;
+    }
+
+    #image_first {
+        width: 600px;
+    }
+    section:hover #image {
+        width: 600px;
+    }
+}
